@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 
 interface LayananToggleContextType {
   showLayanan: boolean;
@@ -15,7 +15,20 @@ const LayananToggleContext = createContext<LayananToggleContextType>({
 export function LayananToggleProvider({ children }: { children: ReactNode }) {
   const [showLayanan, setShowLayanan] = useState(true);
 
-  const toggleLayanan = () => setShowLayanan((prev) => !prev);
+  useEffect(() => {
+    const stored = localStorage.getItem("showLayanan");
+    if (stored !== null) {
+      setShowLayanan(stored === "true");
+    }
+  }, []);
+
+  const toggleLayanan = () => {
+    setShowLayanan((prev) => {
+      const newVal = !prev;
+      localStorage.setItem("showLayanan", String(newVal));
+      return newVal;
+    });
+  };
 
   return (
     <LayananToggleContext.Provider value={{ showLayanan, toggleLayanan }}>
