@@ -117,9 +117,9 @@ export default function Hero() {
         </div>
 
         {/* Bottom Elements */}
-        <div className="w-full flex flex-col md:flex-row justify-between items-end gap-8 pb-8 mt-12">
+        <div className="w-full flex flex-col md:flex-row justify-end items-end gap-8 pb-8 mt-12">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
             className="flex items-center gap-4"
@@ -128,7 +128,7 @@ export default function Hero() {
               {avatars.map((src, i) => (
                 <div
                   key={src}
-                  className="relative w-12 h-12 rounded-full border-2 border-[#1a1a1a] overflow-hidden"
+                  className="relative w-12 h-12 rounded-full border-2 border-[#1a1a1a] overflow-hidden shadow-lg"
                 >
                   <Image
                     src={src}
@@ -142,31 +142,8 @@ export default function Hero() {
               ))}
             </div>
             <div>
-              <p className="font-bold text-white leading-tight">500+ Klien Terlayani</p>
-              <p className="text-sm text-cream-200">Dipercaya oleh banyak individu</p>
+              <p className="font-bold text-cream-100 text-sm md:text-base leading-tight">Dipercaya oleh banyak individu</p>
             </div>
-          </motion.div>
-
-          {/* Bottom Right: Stat Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.8 }}
-            className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl max-w-[320px]"
-          >
-            <div className="flex items-center gap-4 mb-3">
-              <div className="bg-white/20 px-4 py-2 rounded-2xl">
-                <span className="font-bold text-2xl text-white">98%</span>
-              </div>
-              <p className="text-sm font-medium text-cream-100 leading-tight">
-                Tingkat<br />Kepuasan Klien
-              </p>
-            </div>
-            <p className="text-sm text-cream-200 mt-4 leading-relaxed font-serif italic">
-              &ldquo;Pendekatan ini benar-benar membantu saya menemukan arah tujuan saya.&rdquo;
-              <br />
-              <span className="not-italic text-white text-xs mt-2 block opacity-80">— Klien Holistic Educare</span>
-            </p>
           </motion.div>
         </div>
       </div>
