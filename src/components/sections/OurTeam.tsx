@@ -18,7 +18,7 @@ interface TeamMember {
 const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Joko",
-    fullName: "Joko Tri Hartanto, M.Psi., Psikolog",
+    fullName: "Joko Tri Hartanto, S. Psi., M. Psi., Psikolog",
     role: "Psikolog",
     sipp: "20230201-2023-0367",
     image: "/images/team/joko_20230201-2023-0367-opt.webp?v=3",
@@ -42,7 +42,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Izzah",
-    fullName: "Izzah Annisatur Rahma, M. Psi., Psikolog",
+    fullName: "Izzah Annsatur Rahma, S. Psi., M. Psi., Psikolog",
     role: "Psikolog",
     sipp: "20230005-2025-02-1031",
     image: "/images/team/izzah_20230005-2025-02-1031-opt.webp?v=3",
@@ -55,7 +55,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Rista",
-    fullName: "Rista Dwi Fitriani, M. Psi., Psikolog",
+    fullName: "Rista Dwi Fitriani, S. Psi., M. Psi., Psikolog",
     role: "Psikolog",
     sipp: "20190930-2023-0368",
     image: "/images/team/rista_20190930-2023-0368-opt.webp?v=3",
@@ -74,7 +74,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Dila",
-    fullName: "Hasna Fadilla Sustring, M.Psi., Psikolog",
+    fullName: "Hasna Fadilla Sustring, S. Psi., M. Psi., Psikolog",
     role: "Psikolog",
     sipp: "20230131-2023-0550",
     image: "/images/team/dila_20230131-2023-0550-opt.webp?v=3",

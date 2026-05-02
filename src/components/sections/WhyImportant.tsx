@@ -113,16 +113,7 @@ export default function WhyImportant() {
               <p className="text-neutral-300 text-lg md:text-xl leading-relaxed font-serif italic mb-8">
                 &ldquo;Kami hadir untuk membantu Anda memahami diri secara lebih mendalam, sehingga setiap langkah yang diambil menjadi lebih pasti.&rdquo;
               </p>
-              <div className="flex items-center justify-center lg:justify-start gap-3">
-                <div className="flex -space-x-3">
-                  {[1,2,3].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full border-2 border-primary-dark bg-secondary flex items-center justify-center text-white font-bold text-xs shadow-lg">
-                      0{i}
-                    </div>
-                  ))}
-                </div>
-                <span className="text-secondary-light text-sm font-bold uppercase tracking-widest ml-2">Langkah Pasti</span>
-              </div>
+
             </div>
           </motion.div>
         </SectionReveal>

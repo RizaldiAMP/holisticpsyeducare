@@ -245,23 +245,24 @@ export default function SchoolPrograms() {
             {/* Layanan Tambahan */}
             <SectionReveal direction="up" delay={0.4} className="border-t border-cream-200 pt-16">
               <div className="max-w-3xl mx-auto">
-                <h3 className="font-heading text-2xl font-bold text-primary-dark mb-8 text-center bg-white py-2 px-8 rounded-full shadow-sm w-max mx-auto border border-cream-200">
-                  Layanan Tambahan (Opsional)
-                </h3>
                 <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#1A2B1C] via-[#213223] to-[#2A3C2D] p-8 md:p-10 shadow-lg">
                   {/* Decorative blur */}
                   <div className="absolute top-0 right-0 w-48 h-48 bg-secondary/20 rounded-full blur-[60px] -mr-12 -mt-12 pointer-events-none" />
                   <div className="relative z-10 flex flex-col items-center text-center">
                     {/* Highlighted Top Badge */}
-                    <div className="bg-white/10 border border-white/20 rounded-2xl px-8 py-6 mb-8 shadow-[0_4px_20px_rgba(0,0,0,0.1)] ring-1 ring-white/5">
-                      <p className="text-secondary-light text-2xl md:text-3xl font-extrabold tracking-[0.1em] mb-3">PAKET BUNDLING</p>
-                      <p className="text-white font-extrabold text-2xl md:text-3xl tracking-tight">Paket 2 dan Paket 3</p>
+                    <div className="bg-white/10 border border-white/20 rounded-2xl px-8 py-6 mb-8 shadow-[0_4px_20px_rgba(0,0,0,0.1)] ring-1 ring-white/5 w-full max-w-lg">
+                      <p className="text-secondary-light text-xl font-bold tracking-[0.1em] mb-2 uppercase">PAKET BUNDLING</p>
+                      <p className="text-white font-extrabold text-2xl md:text-3xl tracking-tight mb-4">Paket 2 dan Paket 3</p>
+                      <div className="flex justify-center items-center">
+                        <span className="text-4xl md:text-5xl font-extrabold text-secondary-light">150k</span>
+                        <span className="text-white/60 ml-2 font-medium">/ siswa</span>
+                      </div>
                     </div>
 
                     {/* Main Service Text */}
                     <div className="flex flex-col items-center gap-5">
-                      <p className="text-white font-medium text-xl md:text-2xl leading-relaxed max-w-2xl">
-                        {ADDITIONAL_SERVICES[0]}
+                      <p className="text-white/90 font-medium text-lg md:text-xl leading-relaxed max-w-2xl">
+                        Benefit yang ada di paket 3 + gratis asesmen potential untuk guru / tenaga kependidikan
                       </p>
                     </div>
                   </div>
