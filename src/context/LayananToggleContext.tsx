@@ -8,12 +8,12 @@ interface LayananToggleContextType {
 }
 
 const LayananToggleContext = createContext<LayananToggleContextType>({
-  showLayanan: true,
+  showLayanan: false,
   toggleLayanan: () => {},
 });
 
 export function LayananToggleProvider({ children }: { children: ReactNode }) {
-  const [showLayanan, setShowLayanan] = useState(true);
+  const [showLayanan, setShowLayanan] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("showLayanan");
